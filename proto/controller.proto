@@ -1,0 +1,28 @@
+syntax = "proto3";
+option go_package = "github.com/PDRoux/dogs-go-zoom/controller";
+
+message Position3D {
+  int32 x = 1;
+  int32 y = 2;
+  int32 z = 3;
+}
+
+message MoveRequest {
+  Position3D position = 1;
+  float speed = 2;
+}
+
+message MoveResponse {
+  Position3D position = 1;
+  float completion = 2;
+  bool done = 3;
+}
+
+message StopRequest {
+  float speed = 1;
+}
+
+service Controller {
+  rpc Move(MoveRequest) returns (MoveResponse);
+  rpc Stop(StopRequest) returns (MoveResponse);
+}
