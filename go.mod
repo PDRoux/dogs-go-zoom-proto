@@ -1,4 +1,4 @@
-module github.com/yourname/dogs-go-zoom-proto
+module github.com/PDRoux/dogs-go-zoom-proto
 
 go 1.24.1
 
