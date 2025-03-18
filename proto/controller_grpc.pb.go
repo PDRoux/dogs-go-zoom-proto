@@ -4,7 +4,7 @@
 // - protoc             v6.30.1
 // source: proto/controller.proto
 
-package controller
+package proto
 
 import (
 	context "context"
