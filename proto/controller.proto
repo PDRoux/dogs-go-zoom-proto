@@ -1,5 +1,5 @@
 syntax = "proto3";
-option go_package = "github.com/PDRoux/dogs-go-zoom-proto/controller";
+option go_package = "github.com/PDRoux/dogs-go-zoom-proto/gen/controller";
 
 message Position3D {
   int32 x = 1;
